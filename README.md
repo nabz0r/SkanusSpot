@@ -2,87 +2,70 @@
 
 Application permettant de trouver, réserver et commander dans les restaurants halal et casher de Vilnius.
 
+## Contact & Support
+
+- Email : nabz0r@gmail.com
+- GitHub : [@nabz0r](https://github.com/nabz0r)
+
 ## 🚀 Fonctionnalités
 
-### Authentification
-- Inscription/Connexion classique
-- OAuth (Google)
-- Gestion des rôles (user, admin, restaurant_owner)
-- Sessions JWT + Refresh tokens
+### Authentification (#7) ✅
+- Inscription/Connexion JWT
+- OAuth Google
+- Profils utilisateurs
+- Gestion des rôles
 
-### API Endpoints
+### Recherche Avancée (#9) ✅
+- Recherche full-text
+- Filtres multicritères
+- Géolocalisation
+- Autocomplétion
 
-#### Auth
+### Réservation & Commande (#10) ✅
+- Réservation de table
+- Commande en ligne
+- Suivi de livraison
+- Paiement intégré
+
+## 📚 API Endpoints
+
+### Auth
 ```bash
 # Authentification classique
 POST /api/auth/register       # Inscription
 POST /api/auth/login          # Connexion
 POST /api/auth/logout         # Déconnexion
-
-# OAuth
 GET  /api/auth/google         # Login Google
-GET  /api/auth/google/callback# Callback Google
-GET  /api/auth/providers      # Liste providers OAuth
-
-# Profil
-GET  /api/auth/profile        # Obtenir profil
-PUT  /api/auth/profile        # Modifier profil
 ```
 
-## 🛠️ Installation
-
-### Prérequis
-- Node.js >= 18
-- MongoDB >= 6
-- Docker et Docker Compose (optionnel)
-
-### Variables d'environnement
-Créez un fichier `.env` à la racine du backend :
+### Recherche
 ```bash
-# Server
-PORT=5000
-NODE_ENV=development
-
-# Database
-MONGODB_URI=mongodb://localhost:27017/vilnius-halal-finder
-
-# Auth
-JWT_SECRET=your_jwt_secret
-REFRESH_TOKEN_SECRET=your_refresh_secret
-
-# OAuth
-GOOGLE_CLIENT_ID=your_google_client_id
-GOOGLE_CLIENT_SECRET=your_google_client_secret
-
-# Frontend
-FRONTEND_URL=http://localhost:3000
+GET /api/search/restaurants   # Recherche principale
+GET /api/search/suggestions   # Autocomplétion
+GET /api/search/filters       # Filtres disponibles
 ```
 
-### Installation locale
+### Réservations & Commandes
 ```bash
-# Backend
-cd backend
-npm install
-npm run dev
+# Réservations
+POST /api/bookings            # Créer réservation
+GET  /api/bookings/:id        # Détails réservation
+PUT  /api/bookings/:id        # Modifier réservation
 
-# Frontend (à venir)
-cd frontend
-npm install
-npm start
+# Commandes
+POST /api/orders              # Passer commande
+GET  /api/orders/:id          # Statut commande
+GET  /api/orders/:id/track    # Suivi livraison
 ```
 
-### Docker
-```bash
-docker-compose up --build
-```
+## 🛠️ Stack Technique
 
-## 📚 Stack Technique
-
-### Backend
+### Backend (implémenté)
 - Node.js + Express
 - TypeScript
 - MongoDB + Mongoose
-- Passport.js (JWT, Google OAuth)
+- Passport.js (JWT, OAuth)
+- Index géospatiaux
 
 ### Frontend (à venir)
 - React
@@ -90,109 +73,29 @@ docker-compose up --build
 - Redux Toolkit
 - TailwindCSS
 
-## 🔒 Sécurité
-- Mots de passe hashés (bcrypt)
-- JWT + Refresh tokens
-- OAuth2
-- Protection CORS
-- Validation des données
+## 📕 Base de données
 
-## 🔄 CI/CD
-- GitHub Actions (à venir)
-- Docker
-- Tests automatisés (à venir)
-
-## 📖 Documentation API
-Documentation Swagger à venir
-
-## 🤝 Contribution
-1. Forkez le projet
-2. Créez une branche (`git checkout -b feature/amazing-feature`)
-3. Committez vos changements (`git commit -m 'Add amazing feature'`)
-4. Pushez la branche (`git push origin feature/amazing-feature`)
-5. Ouvrez une Pull Request
+### Collections
+- Users (Authentification)
+- Restaurants (Listings)
+- Bookings (Réservations)
+- Orders (Commandes)
+- MenuItems (Plats)
 
 ## 📝 Todo
-- [ ] Tests unitaires et d'intégration
-- [ ] Documentation Swagger
+- [x] Auth JWT + OAuth (✅ Issue #7)
+- [x] Recherche avancée (✅ Issue #9)
+- [x] Réservation en ligne (✅ Issue #10)
 - [ ] Frontend React
-- [ ] OAuth Facebook
-- [ ] Rate limiting
-- [ ] CSRF protection
-
-## 📁 Dépendances Utilisées
-
-### Backend
-```json
-{
-  "dependencies": {
-    "bcryptjs": "^2.4.3",       // Hashage des mots de passe
-    "cors": "^2.8.5",          // CORS middleware
-    "dotenv": "^16.0.3",       // Variables d'environnement
-    "express": "^4.18.2",      // Framework web
-    "helmet": "^6.0.1",        // Sécurité Headers HTTP
-    "jsonwebtoken": "^9.0.0",  // Gestion JWT
-    "mongoose": "^7.0.3",      // ODM MongoDB
-    "morgan": "^1.10.0",       // HTTP request logger
-    "passport": "^0.6.0",      // Authentication middleware
-    "passport-google-oauth20": "^2.0.0", // Google OAuth
-    "passport-jwt": "^4.0.1",  // JWT strategy
-    "winston": "^3.8.2",       // Logging
-    "zod": "^3.21.4"           // Validation des données
-  },
-  "devDependencies": {
-    "@types/node": "^18.15.11",  // Types Node.js
-    "typescript": "^5.0.3",       // TypeScript
-    "nodemon": "^2.0.22"          // Auto-reload serveur
-  }
-}
-```
-
-### Frontend (prévu)
-```json
-{
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "@reduxjs/toolkit": "^1.9.0",
-    "tailwindcss": "^3.3.0",
-    "axios": "^1.3.0"
-  }
-}
-```
-
-### DevOps
-- Docker
-- Docker Compose
-- GitHub Actions
-- MongoDB Atlas
+- [ ] Intégration PWA
+- [ ] Analytics
 
 ## 📰 Copyright & Licence
 
 ### Copyright
 © 2025 Vilnius Halal & Kosher Finder
 
-Développé par [Nabz0r] - Tous droits réservés
+Développé par [@nabz0r](https://github.com/nabz0r)
+Contact : nabz0r@gmail.com
 
-Ce projet est sous licence MIT - voir le fichier [LICENSE.md](LICENSE.md) pour plus de détails
-
-### Licences Tierces
-- MongoDB Community Server (Server Side Public License)
-- Node.js (MIT)
-- React (MIT)
-- Express (MIT)
-- Passport.js (MIT)
-- TailwindCSS (MIT)
-
-### Marques Déposées
-- Google™ et le logo Google sont des marques déposées de Google LLC
-- MongoDB® est une marque déposée de MongoDB, Inc.
-- Docker® est une marque déposée de Docker, Inc.
-
-### Utilisation des Données
-Les données des restaurants sont collectées avec leur autorisation et peuvent être supprimées sur demande.
-
-### Contact
-Pour toute question concernant les droits d'utilisation :
-- Email : nabz0r@gmail.com
-- GitHub : [@username](https://github.com/nabz0r)
+Ce projet est sous licence MIT
