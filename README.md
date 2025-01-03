@@ -194,5 +194,5 @@ Les données des restaurants sont collectées avec leur autorisation et peuvent 
 
 ### Contact
 Pour toute question concernant les droits d'utilisation :
-- Email : [email]
-- GitHub : [@username](https://github.com/username)
+- Email : nabz0r@gmail.com
+- GitHub : [@username](https://github.com/nabz0r)
