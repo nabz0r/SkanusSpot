@@ -2,11 +2,6 @@
 
 Application permettant de trouver, réserver et commander dans les restaurants halal et casher de Vilnius.
 
-## Contact & Support
-
-- Email : nabz0r@gmail.com
-- GitHub : [@nabz0r](https://github.com/nabz0r)
-
 ## 🚀 Fonctionnalités
 
 ### Authentification (#7) ✅
@@ -93,9 +88,17 @@ GET  /api/orders/:id/track    # Suivi livraison
 ## 📰 Copyright & Licence
 
 ### Copyright
-© 2025 Vilnius Halal & Kosher Finder
+© 2025 nabz0r@gmail.com 
 
-Développé par [@nabz0r](https://github.com/nabz0r)
-Contact : nabz0r@gmail.com
+🤝 Contribution
+We Welcome:
+💻 Network Engineers
+👀 Research Scientists
+🌎 Cloud Architects
+🤖 AI/ML Specialists
 
-Ce projet est sous licence MIT
+📞 Contact
+Email: nabz0r@gmail.com GitHub: @nabz0r
+
+📜 License
+MIT License - Innovation without Boundaries
