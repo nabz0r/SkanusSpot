@@ -105,6 +105,6 @@ MIT License - Innovation without Boundaries
 
 <div align="center">
 
-**🚀 Made with ❤️ in Vilnius, Lithuania**
+**🚀 Made with 🇫🇷 ❤️ in Zvejotgala, Lithuania**
 
 </div>
