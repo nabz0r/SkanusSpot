@@ -4,14 +4,11 @@ import { auth } from '../middleware/auth';
 
 const router = express.Router();
 
-// Routes publiques
 router.post('/register', register);
 router.post('/login', login);
-
-// Routes protégées
-router.use(auth);
-router.post('/logout', logout);
-router.get('/profile', getProfile);
-router.put('/profile', updateProfile);
+router.post('/logout', auth, logout);
+router.get('/profile', auth, getProfile);
+router.put('/profile', auth, updateProfile);
+router.put('/preferences', auth, updateProfile);
 
 export default router;
