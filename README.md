@@ -1,6 +1,6 @@
 # 🍽️ Vilnius Halal & Kosher Finder
 
-> Application moderne pour trouver, réserver et commander dans les restaurants halal, casher, végan et végétarien de Vilnius
+> Discover and book authentic halal, kosher, vegan & vegetarian restaurants in Vilnius. Real-time availability, trusted certifications, and seamless mobile ordering
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](#)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
@@ -9,30 +9,30 @@
 ## 🌟 Caractéristiques
 
 ### 🔐 Authentification (#7) ✅
-- Inscription/Connexion JWT
+- JWT Login/Registration
 - OAuth Google
-- Profils utilisateurs
-- Gestion des rôles
+- User Profiles
+- Role Management
 
-### 🔍 Recherche Avancée (#9) ✅
-- Recherche full-text
-- Filtres multicritères
+### 🔍 Advanced Search (#9) ✅
+- Full-text Search
+- Multi-criteria Filters
 - Géolocalisation
-- Autocomplétion
+- Autocomplete
 
-### 📱 Réservation & Commande (#10) ✅
-- Réservation de table
-- Commande en ligne
-- Suivi de livraison
-- Paiement intégré
+### 📱 Booking & Orders (#10) ✅
+- Table Reservations
+- Online Ordering
+- Delivery Tracking
+- Integrated Payment
 
-### 🥗 Options Alimentaires
+### 🥗 Dietary Options
 - Halal ☪️
 - Casher ✡️
 - Végan 🌱
 - Végétarien 🥬
 
-## 📙 Liens Importants
+## 📙 Important Links
 - 📈 [Business Model](docs/BUSINESS_MODEL.md)
 - 📝 [Documentation API](docs/API.md)
 - 🛠️ [Guide Installation](docs/INSTALL.md)
@@ -64,7 +64,7 @@ mindmap
     TailwindCSS
 ```
 
-## 📊 Schéma Base de Données
+## 📊 Database Schema
 
 ### Collections
 ```mermaid
@@ -86,7 +86,7 @@ erDiagram
 
 ## 🤝 Contribution
 
-Nous accueillons :
+We welcome :
 - 💻 Network Engineers
 - 👀 Research Scientists  
 - 🌎 Cloud Architects
