@@ -1,6 +1,6 @@
-# Roadmap 2024-2025
+# Roadmap 
 
-## Phase 1: Foundation (Q1 2024)
+## Phase 1: Foundation 
 ```mermaid
 gantt
     dateFormat  YYYY-MM-DD
@@ -15,21 +15,21 @@ gantt
     Restaurant List           :7d
 ```
 
-## Phase 2: Core Features (Q2 2024)
+## Phase 2: Core Features 
 - Restaurant Details
 - Geolocation & Maps
 - Offline Support
 - Search & Filters
 - Reviews System
 
-## Phase 3: Enhanced Features (Q3 2024)
+## Phase 3: Enhanced Features 
 - Reservations
 - Menu Management
 - Push Notifications
 - Analytics Dashboard
 - Multiple Languages
 
-## Phase 4: Scale & Polish (Q4 2024)
+## Phase 4: Scale & Polish 
 - Performance Optimization
 - SEO Enhancement
 - Admin Dashboard
