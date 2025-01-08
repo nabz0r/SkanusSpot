@@ -1,53 +1,30 @@
-# Architecture du Projet
+# Architecture
 
-## Structure des Dossiers
+## Nouveaux Composants Frontend
 ```mermaid
-graph TD
-A[backend/src] --> B[config]
-A --> C[controllers]
-A --> D[middleware]
-A --> E[models]
-A --> F[routes]
-A --> G[types]
-B --> H[passport.ts]
-C --> I[auth.ts]
-C --> J[oauth.ts]
-C --> K[restaurants.ts]
-E --> L[User.ts]
-E --> M[Restaurant.ts]
-F --> N[auth.ts]
-F --> O[oauth.ts]
-F --> P[restaurants.ts]
+flowchart TD
+    A[App] --> B[Router]
+    B --> C[Layout]
+    C --> D[Home]
+    D --> E[SearchFilters]
+    D --> F[RestaurantCard]
+    B --> G[Auth]
+    B --> H[Restaurant]
 ```
 
-## Flow d'Authentification
+## État Global
 ```mermaid
-sequenceDiagram
-    participant U as User
-    participant A as Auth API
-    participant D as Database
-    U->>A: POST /auth/register
-    A->>D: Create User
-    D-->>A: User Created
-    A-->>U: JWT Token
-    U->>A: POST /auth/login
-    A->>D: Verify Credentials
-    D-->>A: User Found
-    A-->>U: JWT Token
+flowchart LR
+    A[AuthStore] --> B[User Data]
+    A --> C[JWT Token]
+    D[RestaurantStore] --> E[Restaurant List]
+    D --> F[Search Filters]
+    F --> G[Dietary Options]
 ```
 
-## Flow OAuth
-```mermaid
-sequenceDiagram
-    participant U as User
-    participant A as App
-    participant G as Google OAuth
-    participant D as Database
-    U->>A: Click Login with Google
-    A->>G: Redirect to Google
-    G->>A: Auth Code
-    A->>G: Exchange Code
-    G->>A: Access Token
-    A->>D: Create/Update User
-    A->>U: JWT Token
-```
+## Composants UI
+| Composant | Description | Props |
+|-----------|-------------|-------|
+| SearchFilters | Filtres recherche | setFilters() |
+| RestaurantCard | Carte restaurant | restaurant: Restaurant |
+| ProtectedRoute | Route privée | children: ReactNode |
