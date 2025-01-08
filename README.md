@@ -1,6 +1,6 @@
-# 🍽️ Vilnius Halal & Kosher Finder
+# 🍽️ SkanusSpot Halal, Kosher, Vegan & Vegeratian Finder
 
-> Discover and book authentic halal, kosher, vegan & vegetarian restaurants in Vilnius. Real-time availability, trusted certifications, and seamless mobile ordering
+> Discover authentic dining spots across the Baltics. Real-time bookings for halal, kosher, vegan & vegetarian restaurants with trusted certifications. From Vilnius to Tallinn, we connect food-conscious diners with verified local establishments
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](#)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
