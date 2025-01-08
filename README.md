@@ -1,14 +1,20 @@
-# 🍽️ SkanusSpot Halal, Kosher, Vegan & Vegetarian Finder
+# 🌟 SkanusSpot
 
-> Discover authentic dining spots across the Baltics. Real-time bookings for Halal, Kosher, Vegan & Vegetarian restaurants with trusted certifications. From Vilnius to Tallinn, we connect food-conscious diners with verified local establishments
+> Elevate Your Dining Experience Across The Baltics
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](#)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
-[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
+[![Stars](https://img.shields.io/github/stars/nabz0r/SkanusSpot?style=for-the-badge&logo=github)](https://github.com/nabz0r/SkanusSpot/stargazers)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)](#)
+[![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#)
 
-## 🌟 Caractéristiques
+Discover authentic dining spots across the Baltics with trusted Halal ☪️, Kosher ✡️, Vegan 🌱 & Vegetarian 🥬 certifications.
+Real-time bookings, seamless mobile ordering, and verified local establishments from Vilnius to Tallinn.
 
-### 🔐 Authentification (#7) ✅
+## 🌟 Specs
+
+### 🔐 Authentication (#7) ✅
 - JWT Login/Registration
 - OAuth Google
 - User Profiles
