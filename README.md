@@ -6,10 +6,105 @@
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
 
-## Liens Importants
+## 🌟 Caractéristiques
+
+### 🔐 Authentification (#7) ✅
+- Inscription/Connexion JWT
+- OAuth Google
+- Profils utilisateurs
+- Gestion des rôles
+
+### 🔍 Recherche Avancée (#9) ✅
+- Recherche full-text
+- Filtres multicritères
+- Géolocalisation
+- Autocomplétion
+
+### 📱 Réservation & Commande (#10) ✅
+- Réservation de table
+- Commande en ligne
+- Suivi de livraison
+- Paiement intégré
+
+### 🥗 Options Alimentaires
+- Halal ☪️
+- Casher ✡️
+- Végan 🌱
+- Végétarien 🥬
+
+## 📙 Liens Importants
 - 📈 [Business Model](docs/BUSINESS_MODEL.md)
 - 📝 [Documentation API](docs/API.md)
 - 🛠️ [Guide Installation](docs/INSTALL.md)
 - 📗 [Roadmap](ROADMAP.md)
 
-[...reste du README inchangé...]
+## 🔧 Stack Technique
+
+### Backend (implémenté)
+```mermaid
+mindmap
+  root((Backend))
+    Node.js + Express
+      TypeScript
+    MongoDB
+      Mongoose
+      Géospatial
+    Auth
+      JWT
+      OAuth
+```
+
+### Frontend (à venir)
+```mermaid
+mindmap
+  root((Frontend))
+    React 18
+      TypeScript
+    Redux Toolkit
+    TailwindCSS
+```
+
+## 📊 Schéma Base de Données
+
+### Collections
+```mermaid
+erDiagram
+    Users ||--o{ Restaurants : own
+    Users ||--o{ Bookings : make
+    Restaurants ||--o{ MenuItems : have
+    Restaurants ||--o{ Orders : receive
+```
+
+## 📝 Todo
+- [x] Auth JWT + OAuth (✅ Issue #7)
+- [x] Recherche avancée (✅ Issue #9)
+- [x] Réservation en ligne (✅ Issue #10)
+- [x] Support Végan/Végétarien
+- [ ] Frontend React
+- [ ] PWA Integration
+- [ ] Analytics
+
+## 🤝 Contribution
+
+Nous accueillons :
+- 💻 Network Engineers
+- 👀 Research Scientists  
+- 🌎 Cloud Architects
+- 🤖 AI/ML Specialists
+
+## 📱 Contact
+
+- 📧 Email: nabz0r@gmail.com
+- 🐙 GitHub: [@nabz0r](https://github.com/nabz0r)
+
+## 📄 Licence
+
+MIT License - Innovation without Boundaries
+
+---
+
+<div align="center">
+
+**🚀 Made with ❤️ in Vilnius, Lithuania**
+
+</div>
