@@ -10,6 +10,7 @@
 [![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#)
 
 Discover authentic dining spots across the Baltics with trusted Halal ☪️, Kosher ✡️, Vegan 🌱 & Vegetarian 🥬 certifications.
+
 Real-time bookings, seamless mobile ordering, and verified local establishments from Vilnius to Tallinn.
 
 ## 🌟 Specs
