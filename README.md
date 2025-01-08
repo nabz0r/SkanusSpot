@@ -13,21 +13,25 @@ Find and book authentic dining spots across the Baltics - from traditional Halal
 **Features in Your Language:**
 - 🇱🇹 Lithuanian | 🇱🇻 Latvian | 🇪🇪 Estonian | 🇬🇧 English | 🇫🇷 French
 
-**SkanusSpot Vs HappyCow Vs Uber Vs Wolt**
+**SkanusSpot Vs ( HappyCow Vs Uber Vs Wolt )**
 
-SkanusSpot: Baltic Specialist with Local Certifications
-Others: Global, General
+- SkanusSpot: Baltic Specialist with Local Certifications
+- SkanusSpot: Verified Certifications (Official Halal/Kosher)
 
-SkanusSpot: Verified Certifications (Official Halal/Kosher)
-Others: Self-declared
+  Vs
+  
+- Others: Global, General
+- Others: Self-declared
 
 SkanusSpot Unique Features
+
 - Multi-alphabet interface (Latin/Cyrillic)
 - QR code translated menus
 - Crypto/local payment
 - Baltic student discounts
 
 SkanusSpot Local Integration
+
 - University partnerships
 - Cultural events
 - Local community support
