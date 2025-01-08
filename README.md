@@ -1,18 +1,19 @@
-# 🌟 SkanusSpot
+# ✨ SkanusSpot 
+### Experience Baltic Dining, Authentically
 
-> Elevate Your Dining Experience Across The Baltics
+[![Stars](https://img.shields.io/github/stars/nabz0r/SkanusSpot?label=Baltic%20Love&style=social)](https://github.com/nabz0r/SkanusSpot/stargazers)
+[![TypeScript](https://img.shields.io/badge/Crafted_with-TypeScript-007ACC)](#)
+[![React](https://img.shields.io/badge/Powered_by-React-61DAFB)](#)
+[![PWA](https://img.shields.io/badge/Available_on-Mobile-5A0FC8)](#)
 
-[![Stars](https://img.shields.io/github/stars/nabz0r/SkanusSpot?style=for-the-badge&logo=github)](https://github.com/nabz0r/SkanusSpot/stargazers)
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-[![PWA](https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)](#)
-[![Tailwind](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)](#)
+> 🌍 **Baltic's First Certified Food Platform**
 
-Discover authentic dining spots across the Baltics with trusted Halal ☪️, Kosher ✡️, Vegan 🌱 & Vegetarian 🥬 certifications.
+Find and book authentic dining spots across the Baltics - from traditional Halal ☪️ and Kosher ✡️ to modern Vegan 🌱 and Vegetarian 🥬 cuisines.
 
-Real-time bookings, seamless mobile ordering, and verified local establishments from Vilnius to Tallinn.
+**Features in Your Language:**
+- 🇱🇹 Lithuanian | 🇱🇻 Latvian | 🇪🇪 Estonian | 🇬🇧 English | 🇫🇷 French
 
+  
 ## 🌟 Specs
 
 ### 🔐 Authentication (#7) ✅
