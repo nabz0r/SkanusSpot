@@ -1,104 +1,111 @@
-# Vilnius Halal & Kosher Finder 🍽️
+# 🍽️ Vilnius Halal & Kosher Finder
 
-Application permettant de trouver, réserver et commander dans les restaurants halal et casher de Vilnius.
+> Application moderne pour trouver, réserver et commander dans les restaurants halal, casher, végan et végétarien de Vilnius
 
-## 🚀 Fonctionnalités
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](#)
+[![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](#)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](#)
 
-### Authentification (#7) ✅
+## 🌟 Caractéristiques
+
+### 🔐 Authentification (#7) ✅
 - Inscription/Connexion JWT
 - OAuth Google
 - Profils utilisateurs
 - Gestion des rôles
 
-### Recherche Avancée (#9) ✅
+### 🔍 Recherche Avancée (#9) ✅
 - Recherche full-text
 - Filtres multicritères
 - Géolocalisation
 - Autocomplétion
 
-### Réservation & Commande (#10) ✅
+### 📱 Réservation & Commande (#10) ✅
 - Réservation de table
 - Commande en ligne
 - Suivi de livraison
 - Paiement intégré
 
-## 📚 API Endpoints
+### 🥗 Options Alimentaires
+- Halal ☪️
+- Casher ✡️
+- Végan 🌱
+- Végétarien 🥬
 
-### Auth
-```bash
-# Authentification classique
-POST /api/auth/register       # Inscription
-POST /api/auth/login          # Connexion
-POST /api/auth/logout         # Déconnexion
-GET  /api/auth/google         # Login Google
-```
+## 📚 Documentation
 
-### Recherche
-```bash
-GET /api/search/restaurants   # Recherche principale
-GET /api/search/suggestions   # Autocomplétion
-GET /api/search/filters       # Filtres disponibles
-```
+- [Architecture & Flux](docs/Architecture.md)
+- [API Reference](docs/API.md)
+- [Modèles de Données](docs/Models.md)
+- [Guide Contribution](docs/Contributing.md)
 
-### Réservations & Commandes
-```bash
-# Réservations
-POST /api/bookings            # Créer réservation
-GET  /api/bookings/:id        # Détails réservation
-PUT  /api/bookings/:id        # Modifier réservation
-
-# Commandes
-POST /api/orders              # Passer commande
-GET  /api/orders/:id          # Statut commande
-GET  /api/orders/:id/track    # Suivi livraison
-```
-
-## 🛠️ Stack Technique
+## 🔧 Stack Technique
 
 ### Backend (implémenté)
-- Node.js + Express
-- TypeScript
-- MongoDB + Mongoose
-- Passport.js (JWT, OAuth)
-- Index géospatiaux
+```mermaid
+mindmap
+  root((Backend))
+    Node.js + Express
+      TypeScript
+    MongoDB
+      Mongoose
+      Géospatial
+    Auth
+      JWT
+      OAuth
+```
 
 ### Frontend (à venir)
-- React
-- TypeScript
-- Redux Toolkit
-- TailwindCSS
+```mermaid
+mindmap
+  root((Frontend))
+    React 18
+      TypeScript
+    Redux Toolkit
+    TailwindCSS
+```
 
-## 📕 Base de données
+## 📊 Schéma Base de Données
 
 ### Collections
-- Users (Authentification)
-- Restaurants (Listings)
-- Bookings (Réservations)
-- Orders (Commandes)
-- MenuItems (Plats)
+```mermaid
+erDiagram
+    Users ||--o{ Restaurants : own
+    Users ||--o{ Bookings : make
+    Restaurants ||--o{ MenuItems : have
+    Restaurants ||--o{ Orders : receive
+```
 
 ## 📝 Todo
 - [x] Auth JWT + OAuth (✅ Issue #7)
 - [x] Recherche avancée (✅ Issue #9)
 - [x] Réservation en ligne (✅ Issue #10)
+- [x] Support Végan/Végétarien
 - [ ] Frontend React
-- [ ] Intégration PWA
+- [ ] PWA Integration
 - [ ] Analytics
 
-## 📰 Copyright & Licence
+## 🤝 Contribution
 
-### Copyright
-© 2025 nabz0r@gmail.com 
+Nous accueillons :
+- 💻 Network Engineers
+- 👀 Research Scientists  
+- 🌎 Cloud Architects
+- 🤖 AI/ML Specialists
 
-🤝 Contribution
-We Welcome:
-💻 Network Engineers
-👀 Research Scientists
-🌎 Cloud Architects
-🤖 AI/ML Specialists
+## 📱 Contact
 
-📞 Contact
-Email: nabz0r@gmail.com GitHub: @nabz0r
+- 📧 Email: nabz0r@gmail.com
+- 🐙 GitHub: [@nabz0r](https://github.com/nabz0r)
 
-📜 License
+## 📄 Licence
+
 MIT License - Innovation without Boundaries
+
+---
+
+<div align="center">
+
+**🚀 Made with ❤️ in Vilnius, Lithuania**
+
+</div>
