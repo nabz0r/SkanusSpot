@@ -19,7 +19,7 @@ export const restaurantSeeds = [
       country: "Lithuania",
       coordinates: {
         type: "Point",
-        coordinates: [25.2797, 54.6872] // Vilnius coordinates
+        coordinates: [25.2797, 54.6872]
       }
     },
     contacts: {
@@ -66,7 +66,7 @@ export const restaurantSeeds = [
       country: "Latvia",
       coordinates: {
         type: "Point",
-        coordinates: [24.1052, 56.9496] // Riga coordinates
+        coordinates: [24.1052, 56.9496]
       }
     },
     contacts: {
@@ -113,7 +113,7 @@ export const restaurantSeeds = [
       country: "Estonia",
       coordinates: {
         type: "Point",
-        coordinates: [24.7536, 59.4369] // Tallinn coordinates
+        coordinates: [24.7536, 59.4369]
       }
     },
     contacts: {
