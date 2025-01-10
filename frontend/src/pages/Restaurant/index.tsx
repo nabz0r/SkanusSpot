@@ -1,17 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import { useQuery } from '@tanstack/react-query';
 import { Card } from '@/components/ui/card';
-import { Alert } from '@/components/ui/alert';
 import { BookingForm } from '@/components/booking/BookingForm';
-import { RestaurantMap } from '@/components/restaurant/RestaurantMap';
-import { RestaurantMenu } from '@/components/restaurant/RestaurantMenu';
+import { RestaurantInfo } from '@/components/restaurant/RestaurantInfo';
 import { OpeningHours } from '@/components/restaurant/OpeningHours';
-import { CertificationBadges } from '@/components/restaurant/CertificationBadges';
+import { RestaurantMap } from '@/components/restaurant/RestaurantMap';
 
 export default function RestaurantPage() {
   const { id } = useParams<{ id: string }>();
-  
+
   const { data: restaurant, isLoading, error } = useQuery({
     queryKey: ['restaurant', id],
     queryFn: async () => {
@@ -22,58 +20,31 @@ export default function RestaurantPage() {
   });
 
   if (isLoading) return <div>Loading...</div>;
-  if (error) return <Alert variant="destructive">Error loading restaurant details</Alert>;
-  if (!restaurant) return <Alert>Restaurant not found</Alert>;
+  if (error) return <div>Error loading restaurant</div>;
+  if (!restaurant) return <div>Restaurant not found</div>;
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="grid gap-6 md:grid-cols-3">
-        {/* Main Info */}
-        <div className="md:col-span-2">
+      <div className="grid md:grid-cols-3 gap-6">
+        {/* Left column: Restaurant info */}
+        <div className="md:col-span-2 space-y-6">
+          <RestaurantInfo restaurant={restaurant} />
           <Card className="p-6">
-            <h1 className="text-3xl font-bold mb-4">{restaurant.name}</h1>
-            <CertificationBadges certifications={restaurant.certifications} />
-            <p className="text-gray-600 mt-4">{restaurant.description}</p>
-
-            <div className="mt-6">
-              <h2 className="text-xl font-semibold mb-3">Contact</h2>
-              <div className="space-y-2">
-                <p>📞 {restaurant.contacts.phone}</p>
-                <p>📧 {restaurant.contacts.email}</p>
-                <p>🌐 <a href={restaurant.contacts.website} target="_blank" rel="noopener noreferrer" 
-                    className="text-blue-600 hover:underline">
-                    {restaurant.contacts.website}
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-6">
-              <h2 className="text-xl font-semibold mb-3">Location</h2>
-              <p>{restaurant.location.address}</p>
-              <p>{restaurant.location.city}, {restaurant.location.country}</p>
-              <div className="mt-4 h-64">
-                <RestaurantMap location={restaurant.location} />
-              </div>
-            </div>
-          </Card>
-
-          <Card className="mt-6 p-6">
-            <h2 className="text-xl font-semibold mb-4">Menu</h2>
-            <RestaurantMenu restaurantId={id} />
+            <h2 className="text-2xl font-bold mb-4">Location</h2>
+            <RestaurantMap location={restaurant.location} />
           </Card>
         </div>
-
-        {/* Sidebar */}
-        <div>
+        
+        {/* Right column: Booking and hours */}
+        <div className="space-y-6">
           <Card className="p-6">
-            <h2 className="text-xl font-semibold mb-4">Opening Hours</h2>
-            <OpeningHours hours={restaurant.openingHours} />
-          </Card>
-
-          <Card className="mt-6 p-6">
-            <h2 className="text-xl font-semibold mb-4">Make a Reservation</h2>
+            <h2 className="text-2xl font-bold mb-4">Book a Table</h2>
             <BookingForm restaurantId={id} />
+          </Card>
+          
+          <Card className="p-6">
+            <h2 className="text-2xl font-bold mb-4">Opening Hours</h2>
+            <OpeningHours hours={restaurant.openingHours} />
           </Card>
         </div>
       </div>
