@@ -1,0 +1,18 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install dependencies
+COPY backend/package*.json ./
+RUN npm install
+
+# Copy source code
+COPY backend/src ./src
+COPY backend/tsconfig.json ./
+
+# Build TypeScript
+RUN npm run build
+
+EXPOSE 3000
+
+CMD ["npm", "start"]
