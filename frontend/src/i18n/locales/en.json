@@ -1,0 +1,41 @@
+{
+  "common": {
+    "book": "Book a Table",
+    "booking": "Booking",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success"
+  },
+  "restaurant": {
+    "openingHours": "Opening Hours",
+    "location": "Location",
+    "contact": "Contact",
+    "certifications": {
+      "halal": "Halal Certified",
+      "kosher": "Kosher Certified",
+      "vegan": "Vegan",
+      "vegetarian": "Vegetarian"
+    }
+  },
+  "booking": {
+    "selectDate": "Select Date",
+    "selectTime": "Select Time",
+    "guests": "Number of Guests",
+    "guest": "Guest",
+    "guests_plural": "Guests",
+    "specialRequests": "Special Requests",
+    "bookingConfirmed": "Booking Confirmed!",
+    "bookingFailed": "Booking Failed"
+  },
+  "days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  }
+}

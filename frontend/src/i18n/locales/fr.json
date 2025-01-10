@@ -1,0 +1,41 @@
+{
+  "common": {
+    "book": "Réserver une table",
+    "booking": "Réservation",
+    "confirm": "Confirmer",
+    "cancel": "Annuler",
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès"
+  },
+  "restaurant": {
+    "openingHours": "Horaires d'ouverture",
+    "location": "Emplacement",
+    "contact": "Contact",
+    "certifications": {
+      "halal": "Certifié Halal",
+      "kosher": "Certifié Casher",
+      "vegan": "Végétalien",
+      "vegetarian": "Végétarien"
+    }
+  },
+  "booking": {
+    "selectDate": "Sélectionner une date",
+    "selectTime": "Sélectionner une heure",
+    "guests": "Nombre de convives",
+    "guest": "Convive",
+    "guests_plural": "Convives",
+    "specialRequests": "Demandes spéciales",
+    "bookingConfirmed": "Réservation confirmée !",
+    "bookingFailed": "Échec de la réservation"
+  },
+  "days": {
+    "monday": "Lundi",
+    "tuesday": "Mardi",
+    "wednesday": "Mercredi",
+    "thursday": "Jeudi",
+    "friday": "Vendredi",
+    "saturday": "Samedi",
+    "sunday": "Dimanche"
+  }
+}

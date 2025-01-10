@@ -1,0 +1,41 @@
+{
+  "common": {
+    "book": "Rezervuoti stalą",
+    "booking": "Rezervacija",
+    "confirm": "Patvirtinti",
+    "cancel": "Atšaukti",
+    "loading": "Kraunama...",
+    "error": "Klaida",
+    "success": "Pavyko"
+  },
+  "restaurant": {
+    "openingHours": "Darbo laikas",
+    "location": "Vieta",
+    "contact": "Kontaktai",
+    "certifications": {
+      "halal": "Halal sertifikuotas",
+      "kosher": "Košer sertifikuotas",
+      "vegan": "Veganiška",
+      "vegetarian": "Vegetariška"
+    }
+  },
+  "booking": {
+    "selectDate": "Pasirinkite datą",
+    "selectTime": "Pasirinkite laiką",
+    "guests": "Svečių skaičius",
+    "guest": "Svečias",
+    "guests_plural": "Svečiai",
+    "specialRequests": "Specialūs pageidavimai",
+    "bookingConfirmed": "Rezervacija patvirtinta!",
+    "bookingFailed": "Rezervacija nepavyko"
+  },
+  "days": {
+    "monday": "Pirmadienis",
+    "tuesday": "Antradienis",
+    "wednesday": "Trečiadienis",
+    "thursday": "Ketvirtadienis",
+    "friday": "Penktadienis",
+    "saturday": "Šeštadienis",
+    "sunday": "Sekmadienis"
+  }
+}
