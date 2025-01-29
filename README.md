@@ -10,6 +10,8 @@
 
 Find and book authentic dining spots across the Baltics - from traditional Halal ☪️ and Kosher ✡️ to modern Vegan 🌱 and Vegetarian 🥬 cuisines.
 
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20Me%20A%20Coffee-nabz0r-yellow?style=for-the-badge&logo=buymeacoffee&logoColor=white)](https://buymeacoffee.com/nabz0r)
+
 **Features in Your Language:**
 - 🇱🇹 Lithuanian | 🇱🇻 Latvian | 🇪🇪 Estonian | 🇬🇧 English | 🇫🇷 French
 
